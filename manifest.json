@@ -1,0 +1,213 @@
+{
+    "manifest_version": 2,
+    "name": "pure",
+    "version": "2022.2.9",
+    "browser_action": {
+        "default_icon": {
+            "16": "icon16.png",
+            "32": "icon32.png"
+        }
+    },
+    "chrome_url_overrides": {
+        "newtab": "iii.html"
+    },
+    "description": "扩展的版本标识:  一到四个点分隔的 [0 , 65535]整数, 若是非零整数则不能以 0 开头,例如: 0.01.10无效,0.1.10可以",
+    "commands": {
+        "lastTab": {
+            "suggested_key": {
+                "default": "Alt+Z"
+            },
+            "description": "switch to lastTab"
+        }
+    },
+    "web_accessible_resources": [
+        "/*"
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "bookmarks",
+        "history",
+        "contextMenus",
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "clipboardRead",
+        "clipboardWrite",
+        "management",
+        "webNavigation",
+        "storage",
+        "unlimitedStorage",
+        "notifications"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "css": [
+                "all.css"
+            ],
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "nv.css"
+            ],
+            "matches": [
+                "https://www.tujigu.com/a/*",
+                "https://www.lanvshen.com/a/*",
+                "https://www.nvshens.org/g/*",
+                "https://www.meitulu.com/item/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "leg.css"
+            ],
+            "matches": [
+                "https://io-oi.xyz/*"
+            ],
+            "exclude_matches": [
+                "https://io-oi.xyz/*/content/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "youtube.css"
+            ],
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "iwara.css"
+            ],
+            "matches": [
+                "https://www.iwara.tv/*",
+                "https://ecchi.iwara.tv/*"
+            ],
+            "exclude_matches": [
+                "https://ecchi.iwara.tv/user",
+                "https://www.iwara.tv/search*",
+                "https://ecchi.iwara.tv/search*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "pixiv.css"
+            ],
+            "matches": [
+                "https://www.pixiv.net/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "indexxx.css"
+            ],
+            "matches": [
+                "https://www.indexxx.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "anxia.css"
+            ],
+            "matches": [
+                "https://v.anxia.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "ixigua.css"
+            ],
+            "matches": [
+                "https://www.ixigua.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "csdn.css"
+            ],
+            "matches": [
+                "*://*.csdn.net/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "redgifs.css"
+            ],
+            "matches": [
+                "https://www.redgifs.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "css": [
+                "before_after_none.css"
+            ],
+            "matches": [
+                "*://*.pornstarsnaked.com/*",
+                "*://*.eroticbeauty.com/*",
+                "*://*.pornpics.com/*",
+                "*://*.nakedneighbour.com/*",
+                "*://*.babeimpact.com/*",
+                "*://*.beautyprettyteen.com/*",
+                "*://*.wetpussy.sexy/*"
+            ],
+            "exclude_matches": [
+                "*://*.metart.com/*",
+                "*://*.metartx.com/*",
+                "*://*.rylskyart.com/*",
+                "*://*.x-art.com/*",
+                "*://*.w3schools.com/*",
+                "*://*.imooc.com/*",
+                "*://*.youtube.com/*",
+                "*://*.pornhub.com/*",
+                "*://*.baidu.com/*",
+                "*://*.qq.com/*",
+                "*://*.csdn.net/*",
+                "http://nicepornphotos.com/*",
+                "*://*.github.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "js": [
+                "xxx.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}

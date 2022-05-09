@@ -1,0 +1,21 @@
+*{
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    float: none !important;
+    width: auto !important;
+    height: auto !important;
+    text-align: left !important;
+}
+.content {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+.picbox img {
+    height: 50vh !important;
+}
+.picbox>h4 {
+    display: none !important;
+}
+

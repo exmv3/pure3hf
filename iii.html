@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base target="_blank">
+    <title>新tab</title>
+    <style>
+        html {
+            /* scrollbar-width: none; */
+            height: 100%;
+            text-align: center
+        }
+
+        body,
+        table {
+            margin: auto;
+            text-align: left;
+            /* color: aliceblue; */
+        }
+
+        a {
+            color: #f0f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            /*鼠标放上去有下划线*/
+        }
+
+        #dial {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #dial>a {
+            margin: 30px;
+        }
+
+        img {
+            vertical-align: top;
+            max-height: 50vh;
+        }
+
+        .r {
+            opacity: 0.5;
+        }
+
+        .rr {
+            opacity: 0;
+        }
+
+        tr:hover {
+            background-color: #eee;
+        }
+
+        input {
+            outline-style: none;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 13px 14px;
+            width: 330px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: "Microsoft soft";
+        }
+
+        input:focus {
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+        }
+
+        @-webkit-keyframes glowing-royal {
+            from {
+                -webkit-box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+                box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+            }
+
+            50% {
+                -webkit-box-shadow: 0 0 20px rgba(123, 114, 233, 0.8);
+                box-shadow: 0 0 20px rgba(123, 114, 233, 0.8);
+            }
+
+            to {
+                -webkit-box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+                box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+            }
+        }
+
+        @keyframes glowing-royal {
+            from {
+                -webkit-box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+                box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+            }
+
+            50% {
+                -webkit-box-shadow: 0 0 20px rgba(123, 114, 233, 0.8);
+                box-shadow: 0 0 20px rgba(123, 114, 233, 0.8);
+            }
+
+            to {
+                -webkit-box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+                box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+            }
+        }
+
+        button {
+            -webkit-text-size-adjust: 100%;
+            user-select: text !important;
+            font-weight: 300;
+            font-size: 16px;
+            font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+            height: 40px;
+            padding: 0 40px;
+            display: inline-block;
+            appearance: none;
+            cursor: pointer;
+            border: none;
+            box-sizing: border-box;
+            transition-property: all;
+            transition-duration: .3s;
+            background-color: #7B72E9;
+            border-color: #7B72E9;
+            color: #FFF;
+            border-radius: 4px;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            margin: 5px;
+            animation-name: glowing-royal;
+        }
+
+        button:hover {
+            outline: none;
+            background-color: #a49ef0;
+            border-color: #a49ef0;
+        }
+
+        button:active {
+            outline: 0;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+            transition-duration: 0s;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+            background-color: #827ae1;
+            border-color: #827ae1;
+            color: #5246e2;
+        }
+
+        #input_bookmark {
+            position: fixed;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 10px;
+            height: 100vh;
+        }
+
+        #input_bookmark:hover {
+            opacity: 1;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="firefoxctxbookmarkfolder"></table>
+    <h1 id="dial">
+        <input id="input_bookmark" type="search" placeholder="blank">
+        <form>
+            <input type="search" name="keyword" placeholder="blank">
+            <button formaction="https://search.bilibili.com/all">bilibili</button>
+        </form>
+        <form>
+            <input type="search" name="search_query"  placeholder="blank">
+            <button formaction="https://www.youtube.com/results">youtube</button>
+        </form>
+        
+        <a href="https://www.youtube.com/" style="color: #f00;">YouTube</a>
+        <a href="https://www.bilibili.com/" style="color: #f00;">bilibili</a>
+    </h1>
+    <table id='bookmark_table'></table>
+    <div id='img_bookmark_DIV'></div>
+    <script src="iii.js"></script>
+    <div>
+        // chrome.storage.sync.clear()
+        // () => { }
+        // chrome.storage.sync.getBytesInUse((bytesInUse) => console.log(bytesInUse))
+        // ctrl shift alt delete 清空本地存储chrome.storage.local.clear
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+html {
+    scroll-behavior: auto !important;
+}
+body *{
+    user-select: text !important;
+}
+a:visited {
+    color: #777  !important;
+}
+#saqui_BIG_img_DIV{
+    overflow-x: hidden ;
+    background-color: black ;
+    text-align: center ;
+}
+@media (orientation: landscape) {
+    #saqui_BIG_img_DIV>img{
+        display: block  ;
+        margin: auto  ;
+        width: auto ;
+        height: 100vh ;
+        float:none ;
+        border:none ;
+        max-width:none ;
+        max-height:none ;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    #saqui_BIG_img_DIV>img{
+        display: block  ;
+        margin: auto  ;
+        width: 100vw ;
+        height: auto ;
+        float:none ;
+        border:none ;
+        max-width:none ;
+        max-height:none ;
+    }
+  }
+#saquizoomImg{
+    position: fixed ;
+    pointer-events: none  ;
+}
+#info_saqui_BIG_img{
+    visibility: hidden;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+#originURL4646{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+#saquiblurDiv{
+    z-index: 9999;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+.saquiRotateYAnimation {
+    animation-duration: 1500ms;
+    animation-timing-function: steps(2,jump-none);
+    animation-name: saquiRotateY;
+    animation-iteration-count: infinite;
+}
+@keyframes saquiRotateY {
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+.saquiBrightness01Animation {
+    animation-duration: 1500ms;
+    animation-timing-function: steps(2,jump-none);
+    animation-name: saquiBrightness01;
+    animation-iteration-count: infinite;
+}
+@keyframes saquiBrightness01 {
+    from{
+        filter: brightness(0);
+    }
+    to{
+        filter: brightness(1);
+    }
+}
+.saquiBrightness051Animation {
+    animation-duration: 1500ms;
+    animation-timing-function: steps(2,jump-none);
+    animation-name: saquiBrightness051;
+    animation-iteration-count: infinite;
+}
+@keyframes saquiBrightness051 {
+    from{
+        filter: brightness(0.5);
+    }
+    to{
+        filter: brightness(1);
+    }
+}

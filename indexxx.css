@@ -1,0 +1,8 @@
+.floatingElementsContainer div {
+    width: auto !important;
+    height: auto !important;
+}
+.d-flex.flex-row.flex-sm-column div {
+    width: 100% !important;
+    height: auto !important;
+}

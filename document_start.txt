@@ -1,0 +1,82 @@
+document_start
+<saqui_BIG_img_DIV>
+clean html
+url appendChild img 
+
+DOMContentLoaded  
+  appendChild img  ->   clean html ,        appendChild_saqui_BIG_img_DIV,  addEventListener
+
+
+issures
+1===
+
+
+书签
+
+链接
+图像src  >> imgTitle pageLink  pageTitle 
+abcde-bookmark_cover-https://cdni.pornpics.com/460/1/285/39491430/39491430_013_9477.jpg-bkmk_cove-
+
+xxxxxx-BkmkC0ver-xxxxxx-PgT-xxxxxx-Pg0k-xxxxxx  备份书签
+          
+
+
+
+
+
+2===
+iooi 地址栏 用书签中原pincode xmlhttprequest新pincode   =>bug   导致无痕模式切换 404
+
+3===!!!!!!!
+辅助插件 点击browser action 通信 用来控制开关 
+xxx   
+
+4===bug
+xxx开关  导致 滚动切tab也失效
+
+思路1: 辅助插件 点击browser action 通信 用来控制开关xxx 发送 tab id 存储
+思路2: 滚动切tab移到根{}
+
+
+=== 
+iii  newtab  多固定搜索引擎btsow 
+
+
+16:39:37.427 '-BkmkC0ver-https://io-oi.xyz/235712995118875/showimage/nudecollect-5426020912/image00001-8-43-1/20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics/5786566058/leg.xyz-20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics-image00001.jpg-titl-ttt-PgT-ppp'.replace(/-BkmkC0ver-.*?(?=-titl-.*|-PgT-.*|$)|$/, '-BkmkC0ver-' + 'info.srcUrl')
+16:39:37.506 "-BkmkC0ver-info.srcUrl-titl-ttt-PgT-ppp"
+16:40:19.803 '-BkmkC0ver-https://io-oi.xyz/235712995118875/showimage/nudecollect-5426020912/image00001-8-43-1/20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics/5786566058/leg.xyz-20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics-image00001.jpg-titl-ttt-PgT-ppp'.replace(/-BkmkC0ver-.*?(?=-titl-.*|-PgT-.*|$)|$/, '-BkmkC0ver-' + 'info.srcUrl')
+16:40:19.848 "-BkmkC0ver-info.srcUrl-titl-ttt-PgT-ppp"
+16:40:33.396 'https://io-oi.xyz/235712995118875/showimage/nudecollect-5426020912/image00001-8-43-1/20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics/5786566058/leg.xyz-20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics-image00001.jpg-titl-ttt-PgT-ppp'.replace(/-BkmkC0ver-.*?(?=-titl-.*|-PgT-.*|$)|$/, '-BkmkC0ver-' + 'info.srcUrl')
+16:40:33.421 "https://io-oi.xyz/235712995118875/showimage/nudecollect-5426…4_Pics-image00001.jpg-titl-ttt-PgT-ppp-BkmkC0ver-info.srcUrl"
+17:31:46.796 'https://io-oi.xyz/235712995118875/showimage/nudecollect-5426020912/image00001-8-43-1/20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics/5786566058/leg.xyz-20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics-image00001.jpg-titl-ttt-PgT-ppp'.replace(/-BkmkC0ver-.*?(?=-titl-.*|-PgT-.*|$)|$/, '-BkmkC0ver-' + 'info.srcUrl')
+17:31:46.842 "https://io-oi.xyz/235712995118875/showimage/nudecollect-5426…4_Pics-image00001.jpg-titl-ttt-PgT-ppp-BkmkC0ver-info.srcUrl"
+17:32:24.291 'https://io-oi.xyz/235712995118875/showimage/nudecollect-5426020912/image00001-8-43-1/20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics/5786566058/leg.xyz-20200502_Exclusiveteenporn_23_03_2020_Monica_Sensual_Motions_104_Pics-image00001.jpg-titl-ttt-PgT-ppp'.replace(/-BkmkC0ver-.*(?=-titl-.*|-PgT-.*|$)|$/, '-BkmkC0ver-' + 'info.srcUrl')
+17:32:24.379 "https://io-oi.xyz/235712995118875/showimage/nudecollect-5426…4_Pics-image00001.jpg-titl-ttt-PgT-ppp-BkmkC0ver-info.srcUrl"
+17:32:56.782 "https://io-oi.xyz/235712995118875/showimage/nudecollect-5426…4_Pics-image00001.jpg-titl-ttt-PgT-ppp-BkmkC0ver-info.srcUrl"== "https://io-oi.xyz/235712995118875/showimage/nudecollect-5426…4_Pics-image00001.jpg-titl-ttt-PgT-ppp-BkmkC0ver-info.srcUrl"
+17:32:56.805 true
+
+chrome.storage.local.set({k1: '4648741616'}, function(a) {
+      console.log(a);
+    chrome.storage.local.get(['k1'], function(result) {
+      console.log(result);
+    });
+});
+
+
+
+###
+xq pincode,mine
+  storage.set 
+  setTimeOut 重复
+
+      tabs.create iii
+
+iii
+let pincode
+storage.get pincode=xx document.readyState=f()
+storage.onchange   pincode=xx document.readyState=f()
+let fed
+function f(pincode)
+onload=f()
+
+

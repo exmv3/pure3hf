@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: auto !important;
+}
+a:visited {
+    color: #777  !important;
+    /* color: chartreuse !important; */
+}
+#saqui_BIG_img_DIV{
+    /* height: 100% ; */
+    overflow-x: hidden ;
+    background-color: black ;
+    text-align: center ;
+}
+#saqui_BIG_img_DIV img,#saquiimg > img,.saqui_BIG_img{
+    display: block  ;
+    margin: auto  ;
+    width: auto ;
+    height: 100vh ;
+    float:none ;
+    border:none ;
+    max-width:none ;
+    max-height:none ;
+}
+#saqui_BIG_img_DIV :not(img){
+    margin: unset  ;
+}
+.saquizoomImg{
+    /* min-height: 100vh  ; */
+    position: fixed ;
+    pointer-events: none  ;
+}
+#tujiinfo4646{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+#originURL4646{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+.saquiRotateYAnimation {
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-name: saquiRotateY;
+    animation-iteration-count: infinite;
+}
+@keyframes saquiRotateY {
+    from{
+        transform: rotateY(0deg);
+    }
+    0.001%{
+        transform: rotateY(180deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    50.001%{
+        transform: rotateY(360deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+.saquiRotateYedAnimation {
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-name: saquiRotateYed;
+    animation-iteration-count: infinite;
+}
+@keyframes saquiRotateYed {
+    from{
+        filter: brightness(1);
+        transform: rotateY(0deg);
+    }
+    0.001%{
+        filter: brightness(0.5);
+        transform: rotateY(180deg);
+    }
+    50%{
+        filter: brightness(0.5);
+        transform: rotateY(180deg);
+    }
+    50.001%{
+        filter: brightness(1);
+        transform: rotateY(360deg);
+    }
+    to{
+        filter: brightness(1);
+        transform: rotateY(360deg);
+    }
+}

@@ -1,0 +1,10 @@
+/* anxia视频 */
+.operate-bar,.bar-progress,.progress-in,.progress-loaded{
+    background: none !important
+}
+.progress-in{
+    border-right: solid #ff0
+}
+.progress-loaded{
+    border-right: solid #f00
+}

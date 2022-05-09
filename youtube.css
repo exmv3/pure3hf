@@ -1,0 +1,20 @@
+.ytp-gradient-bottom, .ytp-gradient-top {
+    display: none !important;
+}
+#container>ytd-thumbnail{
+    width: 640px !important;
+    height: 360px !important;
+}
+#img {
+    width: auto !important;
+}
+.ytp-title{
+    display: none !important;
+}
+ytd-thumbnail-overlay-resume-playback-renderer{
+    height: 8px !important;
+    background-color: transparent !important;
+}
+#progress.ytd-thumbnail-overlay-resume-playback-renderer{
+    background-color:yellow !important;
+}

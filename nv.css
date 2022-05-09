@@ -1,0 +1,16 @@
+html,body{
+    background-color: black !important;
+}
+#saqui_BIG_img_DIV .tuji,#saqui_BIG_img_DIV .width,#saqui_BIG_img_DIV .albumTitle{
+    writing-mode: vertical-lr !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    /* color: #CC3400 !important; */
+    /* color: #400 !important;
+    font-size: x-large !important;
+    max-width: 260px !important; */
+}
+/* #saqui_BIG_img_DIV > div.tuji > div.weizhi > h1{
+    font-size: 1em !important;
+} */
